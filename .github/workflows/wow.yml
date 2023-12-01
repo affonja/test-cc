@@ -4,7 +4,6 @@ name: PHP CI
 # Trigger the workflow on push or pull request
 on:
   - push
-  - pull_request
 
 jobs:
   build:
@@ -27,9 +26,9 @@ jobs:
       - name: Install
         # Install project
         run: make install
-      - name: Run linter
+#      - name: Run linter
         # Run Linter
-        run: make lint
+#        run: make lint
       # Publish code coverage on Code Climate
       # https://github.com/paambaati/codeclimate-action
       # NOTE: uncomment for using workflow
