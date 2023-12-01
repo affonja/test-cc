@@ -1,27 +1,22 @@
 {
-  "name": "hexlet/php-package",
-  "bin": ["bin/php-package"],
+  "name": "aff/test-cc",
+  "bin": ["bin/gendiff"],
   "type": "library",
   "authors": [
     {
-      "name": "Kirill Mokevnin",
-      "email": "mokevnin@gmail.com"
+      "name": "aff"
     }
   ],
-  "description": "hexlet php-package",
+  "description": "ackage",
   "license": "MIT",
   "scripts": {
     "test": "phpunit tests"
   },
   "autoload": {
-    "psr-4": {
-      "Php\\Package\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Php\\Package\\Tests\\": "tests"
-    }
+    "files": [
+      "src/GenDiff.php",
+      "tests/JsonTest.php"
+    ]
   },
   "require": {
     "tightenco/collect": "^9.33",
